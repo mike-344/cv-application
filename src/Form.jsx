@@ -2,7 +2,7 @@ import FormInput from "./FormInput";
 
 function SectionInput({ text, inputSpecs }) {
     const inputList = inputSpecs.map((specs) => {
-        return  <FormInput key={specs.inputId} labelText={specs.labelText} inputId={specs.inputId} inputType={specs.inputType}/>
+        return  <FormInput key={specs.inputId} labelText={specs.labelText} inputId={specs.inputId} inputType={specs.inputType} />
 });
 
     return (
@@ -48,4 +48,15 @@ function ExperienceSection({text = "Experience Information"}){
     return <SectionInput text={text} inputSpecs={inputSpecs} />;
 
 }
-export  {ContactSection, EducationSection, ExperienceSection} 
+
+function Form (){
+    return (
+        <form>
+            <ContactSection />
+            <EducationSection />
+            <ExperienceSection />
+        </form>
+    )
+    
+}
+export  {ContactSection, EducationSection, ExperienceSection, Form} 
