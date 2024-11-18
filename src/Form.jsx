@@ -1,4 +1,5 @@
 import { MakeFormSections } from "./MakeFormSections";
+import './Form.css'
 function Form(){
 const generalSection = MakeFormSections().makeGeneralSection();
 const educationSection = MakeFormSections().makeEducationSection();

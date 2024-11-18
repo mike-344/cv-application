@@ -13,8 +13,16 @@ function MakeFormSections() {
       );
     });
   }
+  function makeSection(sectiontitle, fields){
+    const sectionFields = makeInputFields(fields)
+    return (
+      <fieldset>
+        <legend>{sectiontitle}</legend>
+        {sectionFields}
+      </fieldset>
+    );
+  }
 
-  function makeGeneralSection() {
     const general = [
       {
         labelText: "Name: ",
@@ -33,16 +41,7 @@ function MakeFormSections() {
         id: crypto.randomUUID(),
       },
     ];
-    const generalFields = makeInputFields(general);
-    return (
-      <fieldset>
-        <legend>General</legend>
-        {generalFields}
-      </fieldset>
-    );
-  }
-
-  function makeEducationSection() {
+   
     const education = [
       {
         labelText: "School: ",
@@ -70,17 +69,6 @@ function MakeFormSections() {
       },
     ];
 
-    const educationFields = makeInputFields(education);
-
-    return (
-      <fieldset>
-        <legend>Education</legend>
-        {educationFields}
-      </fieldset>
-    );
-  }
-
-  function makeExperienceSection() {
     const experience = [
       {
         labelText: "Company: ",
@@ -108,18 +96,12 @@ function MakeFormSections() {
         id: crypto.randomUUID(),
       },
     ];
-    const experienceFields = makeInputFields(experience);
-    return (
-      <fieldset>
-        <legend>Experience</legend>
-        {experienceFields}
-      </fieldset>
-    );
-  }
-
   
 
-  return {makeGeneralSection, makeEducationSection, makeExperienceSection}
+
+  return {makeGeneralSection: () => makeSection("General", general),
+     makeEducationSection: () => makeSection("Education", education),
+      makeExperienceSection: () => makeSection("Experience", experience)}
 }
 
 export { MakeFormSections };
