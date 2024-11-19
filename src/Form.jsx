@@ -1,6 +1,7 @@
 import './Form.css'
 import { formData } from "./formData";
 import { InputElement } from "./InputElement";
+import { Button } from './Button';
 function Form(){
 let sections = formData.map((section) =>{
     return(
@@ -15,7 +16,8 @@ return(
 <>
 <form action="">
     {sections}
-    
+    <Button text="Edit"/>
+    <Button text="Submit"/>
 </form>
 </>
 )
