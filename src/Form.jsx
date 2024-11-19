@@ -1,19 +1,38 @@
-import { MakeFormSections } from "./MakeFormSections";
 import './Form.css'
+import { formData } from "./formData";
+import { InputElement } from "./InputElement";
 function Form(){
-const generalSection = MakeFormSections().makeGeneralSection();
-const educationSection = MakeFormSections().makeEducationSection();
-const experienceSection = MakeFormSections().makeExperienceSection();
+let sections = formData.map((section) =>{
+    return(
+        <fieldset key={section.id}>
+        <legend>{section.title}</legend>
+        {makeInputFields(section.fields)}
+      </fieldset>
+    )
+})
 
 return(
 <>
 <form action="">
-    {generalSection}
-    {educationSection}
-    {experienceSection}
+    {sections}
+    
 </form>
 </>
 )
 }
 
 export {Form}
+
+function makeInputFields(arr) {
+    return arr.map((field) => {
+      return (
+        <InputElement
+          key={field.id}
+          labelText={field.labelText}
+          inputType={field.inputType}
+          labelFor={field.labelFor}
+        />
+      );
+    });
+  }
+  
