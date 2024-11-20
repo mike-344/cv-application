@@ -33,6 +33,7 @@ function makeInputFields(arr) {
           labelText={field.labelText}
           inputType={field.inputType}
           labelFor={field.labelFor}
+          name = {field.name}
         />
       );
     });

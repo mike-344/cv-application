@@ -1,86 +1,98 @@
  const formData = [
     {
     title: "General",
-    id: crypto.randomUUID(),
+    id: "general",
     fields: [
     {
       labelText: "Name: ",
       labelFor: "name",
-      id: crypto.randomUUID(),
+      id: "name",
+      name: "name",
     },
     {
       labelText: "Email ",
       labelFor: "email",
-      id: crypto.randomUUID(),
+      id: "email",
+      name: "email",
+
     },
     {
       labelText: "Phone ",
       inputType: "tel",
       labelFor: "phone",
-      id: crypto.randomUUID(),
+      id: "phone",
+      name: "phone",
     },
 ]
 },
  
   {
     title: "Education",
-    id: crypto.randomUUID(),
+    id: "education",
     fields:[
     {
       labelText: "School: ",
       inputType: "text",
       labelFor: "school",
-      id: crypto.randomUUID(),
+      id: "school",
+      name: "school",
     },
     {
       labelText: "Degree: ",
       inputType: "text",
       labelFor: "degree",
-      id: crypto.randomUUID(),
+      id: "degree",
+      name: "degree",
     },
     {
       labelText: "Start date: ",
       inputType: "date",
-      labelFor: "startDate",
-      id: crypto.randomUUID(),
+      labelFor: "schoolStartDate",
+      id: "schoolStartDate",
+      name: "schoolStartDate",
     },
     {
       labelText: "End date: ",
       inputType: "date",
-      labelFor: "endDate",
-      id: crypto.randomUUID(),
+      labelFor: "schoolEndDate",
+      id: "schoolEndDate",
+      name: "schoolEndDate"
     },
 ]
 },
 
   {
     title: "Experience",
-    id: crypto.randomUUID(),
+    id: "experience",
     fields:[
     {
       labelText: "Company: ",
       inputType: "text",
       labelFor: "company",
-      id: crypto.randomUUID(),
+      id: "company",
+      name: "company",
     },
     {
       labelText: "Position title: ",
       inputType: "text",
       labelFor: "positionTitle",
-      id: crypto.randomUUID(),
+      id: "positionTitle",
+      name: "positionTitle"
     },
 
     {
       labelText: "Start date: ",
       inputType: "date",
       labelFor: "startDate",
-      id: crypto.randomUUID(),
+      id: "jobStartDate",
+      name: "jobStartDate",
     },
     {
       labelText: "End date: ",
       inputType: "date",
       labelFor: "endDate",
-      id: crypto.randomUUID(),
+      id: "jobEndDate",
+      name: "jobEndDate",
     },
 ]
 },
