@@ -6,7 +6,7 @@ function General({legendTitle = "General"}){
         <input type="text" name="name" id="name" />
 
         <label htmlFor="email">Email:</label>
-        <input type="text" name="email" id="email" />
+        <input type="email" name="email" id="email" />
 
         <label htmlFor="phone">Phone:</label>
         <input type="text" name="phone" id="phone" />
