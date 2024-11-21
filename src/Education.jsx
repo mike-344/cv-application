@@ -2,17 +2,17 @@ function Education({legendTitle = "Education"}){
     return(
         <fieldset>
         <legend>{legendTitle}</legend>
-        <label htmlFor="">School:</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="school">School:</label>
+        <input type="text" name="school" id="school" />
 
-        <label htmlFor="">Degree:</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="degree">Degree:</label>
+        <input type="text" name="degree" id="degree" />
         
-        <label htmlFor="">Start Date:</label>
-        <input type="date" name="" id="" />
+        <label htmlFor="startDate">Start Date:</label>
+        <input type="date" name="startDate" id="startDate" />
 
-        <label htmlFor="">End Date:</label>
-        <input type="date" name="" id="" />
+        <label htmlFor="endDate">End Date:</label>
+        <input type="date" name="endDate" id="endDate" />
 
         
     </fieldset>

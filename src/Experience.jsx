@@ -1,7 +1,7 @@
-function Experience(){
+function Experience({legendTitle = "Experience"}){
     return(
         <fieldset>
-        <legend>Experience</legend>
+        <legend>{legendTitle}</legend>
         <label htmlFor="">Company:</label>
         <input type="text" name="" id="" />
 
