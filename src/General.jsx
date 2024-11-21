@@ -9,7 +9,7 @@ function General({legendTitle = "General"}){
         <input type="email" name="email" id="email" />
 
         <label htmlFor="phone">Phone:</label>
-        <input type="text" name="phone" id="phone" />
+        <input type="tel" name="phone" id="phone" />
     </fieldset>
     )
 }
