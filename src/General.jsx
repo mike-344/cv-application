@@ -1,7 +1,7 @@
-function General(){
+function General({legendTitle = "General"}){
     return(
         <fieldset>
-        <legend>General</legend>
+        <legend>{legendTitle}</legend>
         <label htmlFor="">Name:</label>
         <input type="text" name="" id="" />
 
