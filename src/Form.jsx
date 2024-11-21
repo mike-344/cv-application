@@ -9,8 +9,8 @@ function Form({value, handleChange}){
         <>
         <form action="">
             <General value={value} handleChange={handleChange}/>
-            <Education />
-            <Experience />
+            <Education value={value} handleChange={handleChange}/>
+            <Experience value={value} handleChange={handleChange}/>
             <Button text="Edit"/>
             <Button />
         </form>
