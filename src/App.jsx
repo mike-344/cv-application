@@ -24,7 +24,7 @@ const handleChange = (e, prop) => setValue({...value, [prop]:e.target.value})
   return (
     <>
      <Form value = {value} handleChange={handleChange}/>
-     <Resume />
+     <Resume value = {value}/>
      
     </>
   );
