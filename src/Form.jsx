@@ -1,4 +1,4 @@
-function General(){
+function Form(){
 
     return (
         <>
@@ -13,4 +13,4 @@ function General(){
         </>
     )
 }
-export{General}
+export{Form}

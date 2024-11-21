@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { General } from "./generalSection";
+import { Form } from "./Form";
 
 
 function App() {
