@@ -3,16 +3,16 @@ function Education({legendTitle = "Education", value, handleChange}){
         <fieldset>
         <legend>{legendTitle}</legend>
         <label htmlFor="school">School:</label>
-        <input type="text" name="school" id="school" value={value.school} onChange={handleChange}/>
+        <input type="text" name="school" id="school" value={value.school} onChange={(e)=>handleChange(e,"school")}/>
 
         <label htmlFor="degree">Degree:</label>
-        <input type="text" name="degree" id="degree" value={value.degree} onChange={handleChange}/>
+        <input type="text" name="degree" id="degree" value={value.degree} onChange={(e)=>handleChange(e,"degree")}/>
         
         <label htmlFor="schoolStartDate">Start Date:</label>
-        <input type="date" name="schoolStartDate" id="schoolStartDate" value={value.schoolStartDate} onChange={handleChange}/>
+        <input type="date" name="schoolStartDate" id="schoolStartDate" value={value.schoolStartDate} onChange={(e)=>handleChange(e,"schoolStartDate")}/>
 
         <label htmlFor="schoolEndDate">End Date:</label>
-        <input type="date" name="schoolEndDate" id="schoolEndDate" value={value.schoolEndDate} onChange={handleChange}/>
+        <input type="date" name="schoolEndDate" id="schoolEndDate" value={value.schoolEndDate} onChange={(e)=>handleChange(e,"schoolEndDate")}/>
 
         
     </fieldset>

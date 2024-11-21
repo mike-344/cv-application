@@ -20,7 +20,7 @@ function App() {
     jobEndDate: "",
     responsibilities: "",
 })
-const handleChange = (e) => setValue({...value, name:e.target.value})
+const handleChange = (e, prop) => setValue({...value, [prop]:e.target.value})
   return (
     <>
      <Form value = {value} handleChange={handleChange}/>
