@@ -2,14 +2,14 @@ function Form(){
 
     return (
         <>
-        <label htmlFor="">Name:</label>
-        <input type="text" name="" id="" />
-
-        <label htmlFor="">Email:</label>
-        <input type="text" name="" id="" />
-
-        <label htmlFor="">Phone:</label>
-        <input type="text" name="" id="" />
+        <fieldset>
+            <label htmlFor="">Name:</label>
+            <input type="text" name="" id="" />
+            <label htmlFor="">Email:</label>
+            <input type="text" name="" id="" />
+            <label htmlFor="">Phone:</label>
+            <input type="text" name="" id="" />
+        </fieldset>
         </>
     )
 }
