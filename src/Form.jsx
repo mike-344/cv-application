@@ -2,6 +2,7 @@ import { General } from "./General"
 import { Education } from "./Education"
 import { Experience } from "./Experience"
 import { Button } from "./Button"
+import "./Form.css"
 
 function Form({value, handleChange}){
 

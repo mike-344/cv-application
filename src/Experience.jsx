@@ -5,7 +5,7 @@ function Experience({legendTitle = "Experience", value, handleChange}){
         <label htmlFor="company">Company:</label>
         <input type="text" name="company" id="company" value={value.company} onChange={(e)=>handleChange(e,"company")}/>
 
-        <label htmlFor="title">Title</label>
+        <label htmlFor="title">Title:</label>
         <input type="text" name="title" id="title" value={value.title} onChange={(e)=>handleChange(e,"title")}/>
         
         <label htmlFor="jobStartDate">Start Date:</label>

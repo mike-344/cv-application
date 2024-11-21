@@ -1,7 +1,7 @@
 function General({legendTitle = "General", value, handleChange}){
    
     return(
-        <fieldset>
+        <fieldset >
         <legend>{legendTitle}</legend>
         <label htmlFor="name">Name:</label>
         <input type="text" name="name" id="name" value={value.name} onChange={(e)=>handleChange(e,"name")}/>
