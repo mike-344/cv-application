@@ -2,16 +2,17 @@ function General({legendTitle = "General"}){
     return(
         <fieldset>
         <legend>{legendTitle}</legend>
-        <label htmlFor="">Name:</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="name">Name:</label>
+        <input type="text" name="name" id="name" />
 
-        <label htmlFor="">Email:</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="email">Email:</label>
+        <input type="text" name="email" id="email" />
 
-        <label htmlFor="">Phone:</label>
-        <input type="text" name="" id="" />
+        <label htmlFor="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" />
     </fieldset>
     )
 }
 
 export {General}
+

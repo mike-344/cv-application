@@ -8,11 +8,11 @@ function Education({legendTitle = "Education"}){
         <label htmlFor="degree">Degree:</label>
         <input type="text" name="degree" id="degree" />
         
-        <label htmlFor="startDate">Start Date:</label>
-        <input type="date" name="startDate" id="startDate" />
+        <label htmlFor="schoolStartDate">Start Date:</label>
+        <input type="date" name="schoolStartDate" id="schoolStartDate" />
 
-        <label htmlFor="endDate">End Date:</label>
-        <input type="date" name="endDate" id="endDate" />
+        <label htmlFor="schoolEndDate">End Date:</label>
+        <input type="date" name="schoolEndDate" id="schoolEndDate" />
 
         
     </fieldset>
