@@ -20,9 +20,10 @@ function App() {
     jobEndDate: "",
     responsibilities: "",
 })
+const handleChange = (e) => setValue({...value, name:e.target.value})
   return (
     <>
-     <Form value = {value}/>
+     <Form value = {value} handleChange={handleChange}/>
      <Resume />
      
     </>
