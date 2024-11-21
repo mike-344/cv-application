@@ -3,12 +3,12 @@ import { Education } from "./Education"
 import { Experience } from "./Experience"
 import { Button } from "./Button"
 
-function Form(){
+function Form({value}){
 
     return (
         <>
         <form action="">
-            <General />
+            <General value={value}/>
             <Education />
             <Experience />
             <Button text="Edit"/>

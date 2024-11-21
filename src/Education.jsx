@@ -1,4 +1,4 @@
-function Education({legendTitle = "Education"}){
+function Education({legendTitle = "Education", value}){
     return(
         <fieldset>
         <legend>{legendTitle}</legend>

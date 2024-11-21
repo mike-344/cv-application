@@ -6,10 +6,23 @@ import { Resume } from "./Resume";
 
 
 function App() {
-  const [inputValue, setInputValue] = useState("")
+  const [value, setValue] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    school: "",
+    degree: "",
+    schoolStartDate: "",
+    schoolEndDate: "",
+    company: "",
+    title: "",
+    jobStartDate: "",
+    jobEndDate: "",
+    responsibilities: "",
+})
   return (
     <>
-     <Form inputValue/>
+     <Form value/>
      <Resume />
      
     </>
