@@ -1,3 +1,3 @@
 #CV-Application
 
-Learning state and props in React with a simple Resume builder.
+Building a resume formatter in React, applying concepts of state and props.
