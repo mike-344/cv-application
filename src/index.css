@@ -1,22 +1,15 @@
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 8px;
+    
 }
 #root{
     display: flex;
-    padding: 8px;
     height: 100vh;
-    background-color: rgb(222, 211, 211);
-    
-    
+    height: 100vh;
+    justify-content: space-around;
 }
-fieldset{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px;
-}
-form{
-    min-width: 40vw;
-}
+
