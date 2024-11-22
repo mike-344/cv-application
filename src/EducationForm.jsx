@@ -1,4 +1,5 @@
-function Education({legendTitle = "Education", value, handleChange}){
+import { Button } from "./Button"
+function EducationForm({legendTitle = "Education", value, handleChange}){
     return(
         <fieldset>
         <legend>{legendTitle}</legend>
@@ -13,9 +14,9 @@ function Education({legendTitle = "Education", value, handleChange}){
 
         <label htmlFor="schoolEndDate">End Date:</label>
         <input type="date" name="schoolEndDate" id="schoolEndDate" value={value.schoolEndDate} onChange={(e)=>handleChange(e,"schoolEndDate")}/>
-
+        <Button />
         
     </fieldset>
     )
 }
-export{Education}
+export{EducationForm}

@@ -1,4 +1,5 @@
-function Experience({legendTitle = "Experience", value, handleChange}){
+import { Button } from "./Button"
+function ExperienceForm({legendTitle = "Experience", value, handleChange}){
     return(
         <fieldset>
         <legend>{legendTitle}</legend>
@@ -16,8 +17,9 @@ function Experience({legendTitle = "Experience", value, handleChange}){
 
         <label htmlFor="responsibilities">Responsibilities:</label>
         <textarea name="responsibilities" id="responsibilities" cols="30" rows="10" value={value.responsibilities} onChange={(e)=>handleChange(e,"responsibilities")}></textarea>
+        <Button />
     </fieldset>
     )
 }
 
-export{Experience}
+export{ExperienceForm}

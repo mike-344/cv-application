@@ -1,4 +1,4 @@
-function Button({text = "Submit"}){
+function Button({text = "New"}){
 
     return(
         <button type="button">{text}</button>

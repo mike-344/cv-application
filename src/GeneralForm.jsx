@@ -1,4 +1,4 @@
-function General({legendTitle = "General", value, handleChange}){
+function GeneralForm({legendTitle = "General", value, handleChange}){
    
     return(
         <fieldset >
@@ -15,5 +15,5 @@ function General({legendTitle = "General", value, handleChange}){
     )
 }
 
-export {General}
+export {GeneralForm}
 

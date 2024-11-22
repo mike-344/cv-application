@@ -1,6 +1,6 @@
-import { General } from "./General"
-import { Education } from "./Education"
-import { Experience } from "./Experience"
+import { GeneralForm } from "./GeneralForm"
+import { EducationForm } from "./EducationForm"
+import { ExperienceForm } from "./ExperienceForm"
 import { Button } from "./Button"
 import "./Form.css"
 
@@ -9,9 +9,9 @@ function Form({value, handleChange}){
     return (
         <>
         <form action="">
-            <General value={value} handleChange={handleChange}/>
-            <Education value={value} handleChange={handleChange}/>
-            <Experience value={value} handleChange={handleChange}/>
+            <GeneralForm value={value} handleChange={handleChange}/>
+            <EducationForm value={value} handleChange={handleChange}/>
+            <ExperienceForm value={value} handleChange={handleChange}/>
             
         </form>
         </>
