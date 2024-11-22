@@ -12,12 +12,12 @@ function App() {
     phone: "(555) 555-5555",
     school: "Your University",
     degree: "BA Economics",
-    schoolStartDate: "9999-99-99",
-    schoolEndDate: "9999-99-99",
+    schoolStartDate: "2024-11-20",
+    schoolEndDate: "2024-11-20",
     company: "Your Company",
     title: "Your Title",
-    jobStartDate: "9999-99-99",
-    jobEndDate: "9999-99-99",
+    jobStartDate: "2024-11-20",
+    jobEndDate: "2024-11-20",
     responsibilities: "-You can list your\n-Responsibilities here",
 })
 const handleChange = (e, prop) => setValue({...value, [prop]:e.target.value})
