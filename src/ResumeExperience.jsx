@@ -1,8 +1,9 @@
-function ResumeExperience({value}){
+
+function ResumeExperience({value, heading = "Experience"}){
     return(
         <>
         <div className='experience'>
-        <h2>Experience</h2>
+        <h2>{heading}</h2>
         <div className='jobGeneral'>
         <div className='jobDetails'>
         <div className='company'>{value.company}</div>

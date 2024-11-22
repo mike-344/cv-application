@@ -1,8 +1,8 @@
-function ResumeEducation({value}){
+function ResumeEducation({value, heading = "Education"}){
     return(
         <>
-        <div className='education'>
-        <h2>Education</h2>
+        <section className='education'>
+        <h2>{heading}</h2>
         <div className='schoolGeneral'>
         <div className='schoolDetails'>
         <div className='school'>{value.school}</div>
@@ -13,7 +13,7 @@ function ResumeEducation({value}){
         <div className='schoolEndDate'>{value.schoolEndDate}</div>
         </div>
         </div>
-        </div>
+        </section>
         </>
     )
 }
