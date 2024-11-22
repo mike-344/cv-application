@@ -1,3 +1,5 @@
+import './ResumeEducation.css'
+
 function ResumeEducation({value, heading = "Education"}){
     return(
         <>

@@ -1,8 +1,8 @@
-
+import './ResumeExperience.css'
 function ResumeExperience({value, heading = "Experience"}){
     return(
         <>
-        <div className='experience'>
+        <section className='experience'>
         <h2>{heading}</h2>
         <div className='jobGeneral'>
         <div className='jobDetails'>
@@ -15,7 +15,7 @@ function ResumeExperience({value, heading = "Experience"}){
         </div>
         </div>
         <div className='responsibilities'>{value.responsibilities}</div>
-        </div>
+        </section>
         
         </>
     )
