@@ -12,8 +12,7 @@ function Form({value, handleChange}){
             <General value={value} handleChange={handleChange}/>
             <Education value={value} handleChange={handleChange}/>
             <Experience value={value} handleChange={handleChange}/>
-            <Button text="Edit"/>
-            <Button />
+            
         </form>
         </>
     )

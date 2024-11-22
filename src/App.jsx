@@ -18,7 +18,7 @@ function App() {
     title: "Your Title",
     jobStartDate: "9999-99-99",
     jobEndDate: "9999-99-99",
-    responsibilities: "Responsibility 1",
+    responsibilities: "-You can list your\n-Responsibilities here",
 })
 const handleChange = (e, prop) => setValue({...value, [prop]:e.target.value})
   return (

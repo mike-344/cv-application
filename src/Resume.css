@@ -27,3 +27,10 @@
 display: flex;
 justify-content: space-between;
 }
+.responsibilities{
+    white-space: pre-wrap;
+}
+.schoolDetails, .jobDetails{
+    font-style: italic;
+    
+}
