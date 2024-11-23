@@ -1,16 +1,16 @@
 import './Resume.css'
-import { ResumeExperience } from './ResumeExperience'
-import { ResumeEducation } from './ResumeEducation'
-import { ResumeGeneral } from './ResumeGeneral'
+import { ExperienceResume } from './ExperienceResume'
+import { EducationResume } from './EducationResume'
+import { GeneralResume } from './GeneralResume'
 
 function Resume({value}){
 
     return(
       <>
       <div className='resume'>
-      <ResumeGeneral value={value}/>
-      <ResumeEducation value={value}/>
-      <ResumeExperience value={value}/>
+      <GeneralResume value={value}/>
+      <EducationResume value={value}/>
+      <ExperienceResume value={value}/>
       </div>
       </>
     )

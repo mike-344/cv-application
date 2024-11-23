@@ -1,6 +1,6 @@
-import './ResumeEducation.css'
+import './EducationResume.css'
 
-function ResumeEducation({value, heading = "Education"}){
+function EducationResume({value, heading = "Education"}){
     return(
         <>
         <section className='education'>
@@ -19,4 +19,4 @@ function ResumeEducation({value, heading = "Education"}){
         </>
     )
 }
-export {ResumeEducation}
+export {EducationResume}

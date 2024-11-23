@@ -1,5 +1,5 @@
-import './ResumeGeneral.css'
-function ResumeGeneral({value}){
+import './GeneralResume.css'
+function GeneralResume({value}){
     return(
         <>
           
@@ -16,4 +16,4 @@ function ResumeGeneral({value}){
     )
 }
 
-export {ResumeGeneral}
+export {GeneralResume}

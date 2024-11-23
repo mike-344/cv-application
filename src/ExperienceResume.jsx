@@ -1,5 +1,5 @@
-import './ResumeExperience.css'
-function ResumeExperience({value, heading = "Experience"}){
+import './ExperienceResume.css'
+function ExperienceResume({value, heading = "Experience"}){
     return(
         <>
         <section className='experience'>
@@ -21,4 +21,4 @@ function ResumeExperience({value, heading = "Experience"}){
     )
 }
 
-export {ResumeExperience}
+export {ExperienceResume}
