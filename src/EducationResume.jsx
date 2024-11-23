@@ -1,5 +1,6 @@
 import './EducationResume.css'
 
+//Education component for the resume display
 function EducationResume({value, heading = "Education"}){
     return(
         <>

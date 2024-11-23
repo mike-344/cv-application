@@ -1,4 +1,6 @@
 import './GeneralResume.css'
+
+//General component for the resume display
 function GeneralResume({value}){
     return(
         <>

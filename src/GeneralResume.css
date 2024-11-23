@@ -1,3 +1,5 @@
+/*This styles the general component of the resume display*/
+
 .general{
     display: flex;
     flex-direction: column;

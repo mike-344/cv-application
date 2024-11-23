@@ -1,6 +1,6 @@
 import { Button } from "./Button"
 
-//Education section for the resume input form
+//Education component for the input form
 function EducationForm({legendTitle = "Education", value, handleChange}){
     return(
         <fieldset>

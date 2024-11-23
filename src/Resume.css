@@ -1,3 +1,7 @@
+/*This styles the resume display*/
+
 .responsibilities{
+    /*Let responsibility section in resume
+    to line break when texrarea does*/
     white-space: pre-wrap;
 }

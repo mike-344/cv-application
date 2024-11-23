@@ -1,5 +1,5 @@
 
-//General section for the resume input form
+//General component for the resume input form
 function GeneralForm({legendTitle = "General", value, handleChange}){
    
     return(

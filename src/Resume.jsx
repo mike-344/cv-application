@@ -3,6 +3,8 @@ import { ExperienceResume } from './ExperienceResume'
 import { EducationResume } from './EducationResume'
 import { GeneralResume } from './GeneralResume'
 
+
+//Resume component
 function Resume({value}){
 
     return(

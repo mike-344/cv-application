@@ -1,4 +1,6 @@
 import './ExperienceResume.css'
+
+//Experience component for the resume display
 function ExperienceResume({value, heading = "Experience"}){
     return(
         <>

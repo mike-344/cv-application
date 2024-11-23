@@ -4,6 +4,8 @@ import { ExperienceForm } from "./ExperienceForm"
 import { Button } from "./Button"
 import "./Form.css"
 
+
+//Input form component
 function Form({value, handleChange}){
 
     return (

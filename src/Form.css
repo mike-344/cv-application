@@ -1,3 +1,5 @@
+/*This styles the input form*/
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@ fieldset{
     border: none;
 }
 form{
-    max-width: 500px;
+   max-width: 500px;
    padding: 8px;
    border-radius: 6px;
    box-shadow: 1px 2px 1px 1px rgb(218, 218, 218);

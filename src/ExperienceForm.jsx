@@ -1,6 +1,6 @@
 import { Button } from "./Button"
 
-//Experience section for the resume input form
+//Experience component for the resume input form
 function ExperienceForm({legendTitle = "Experience", value, handleChange}){
     return(
         <fieldset>
