@@ -1,13 +1,10 @@
-/*Change default styles*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Make the form and resume flex items
 #root{
     display: flex;
+    gap: 12px;
+    
 }
-
-*/

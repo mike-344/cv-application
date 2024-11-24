@@ -1,14 +1,16 @@
 import { Button } from "./Button"
+import { FormGeneralSection } from "./FormGeneralSection"
 import "./Form.css"
 
 
 
-function Form({value, handleChange}){
+
+function Form({inp, handleChange, handleClick}){
 
     return (
         <>
-        <form action="">
-          
+       <form>
+        <FormGeneralSection inp={inp} handleChange={handleChange} handleClick={handleClick}/>
         </form>
         </>
     )

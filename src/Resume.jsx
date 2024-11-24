@@ -1,14 +1,15 @@
 import './Resume.css'
+import './ResumeGeneralSection'
+import { ResumeGeneralSection } from './ResumeGeneralSection'
 
 
-//Resume component
-function Resume({value}){
+function Resume({text}){
 
     return(
       <>
-      <div className='resume'>
-    
-      </div>
+      <section className='resume'>
+        <ResumeGeneralSection text={text}/>
+      </section>
       </>
     )
 }

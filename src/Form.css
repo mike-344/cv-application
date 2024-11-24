@@ -1,27 +1,32 @@
-/*This styles the input form*/
-
-fieldset{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    border: none;
-}
 form{
-   max-width: 500px;
-   padding: 8px;
-   border-radius: 6px;
-   box-shadow: 1px 2px 1px 1px rgb(218, 218, 218);
-   background-color: rgb(254, 251, 251);
-   height: fit-content;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(188, 187, 187);
+    padding: 10px;
+    height: fit-content;
 }
-input, textarea{
+form input{
     display: block;
-}
-input{
     width: 100%;
+}
+fieldset{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+    border: none;
+    
+    
 }
 
 legend{
-    font-weight: bold;
-    font-size: 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+   
+}
+legend:hover{
+    background-color: rgb(219, 217, 217);
 }

@@ -5,3 +5,23 @@
     to line break when texrarea does*/
     white-space: pre-wrap;
 }
+
+.resume{
+    width: 600px;
+    height: 600px;
+    box-shadow: 1px 1px 2px rgb(188, 187, 187);
+    padding: 6px;
+}
+.personalInformation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactInformation{
+    display: flex;
+    gap: 5px;
+}
+.name{
+    font-size: 35px;
+    font-weight: bold;
+}
