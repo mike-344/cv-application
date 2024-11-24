@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { Button } from "./Button";
 
-function FormGeneralSection({ inp, handleChange, handleClick }) {
+/*Takes inp obj and change handler to control/update form input values, click handler submits form
+and updates text display values*/
+function FormPersonalSection({ personalInputs, handleChange, handleClick }) {
+  //Initialize closed state to toggle input fields when legend is clicked  
   const [closed, setClosed] = useState(true);
 
+  //Toggle to display input fields
   const handleToggle = () => {
     if (closed) {
       setClosed(false);
@@ -12,12 +16,14 @@ function FormGeneralSection({ inp, handleChange, handleClick }) {
     }
   };
 
+  /*pass the inp, click, and change handlers down to InputFields.
+  Set Legend to toggle input fields on click */
   return (
     <>
       <fieldset>
         <legend onClick={handleToggle}>Personal Information</legend>
         <InputFields
-          inp={inp}
+          personalInputs={personalInputs}
           handleChange={handleChange}
           isClosed={closed}
           handleClick={handleClick}
@@ -27,7 +33,10 @@ function FormGeneralSection({ inp, handleChange, handleClick }) {
   );
 }
 
-function InputFields({ inp, handleChange, isClosed, handleClick }) {
+//input fields display when isClosed is false
+//Reads values of inp obj and updates values with change handler
+//click handler updates the resume text to match input values
+function InputFields({ personalInputs, handleChange, isClosed, handleClick }) {
   if (!isClosed) {
     return (
       <>
@@ -36,7 +45,7 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
             type="text"
             name="name"
             id=""
-            value={inp.name}
+            value={personalInputs.name}
             onChange={handleChange}
           />
         </label>
@@ -46,7 +55,7 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
             type="text"
             name="email"
             id=""
-            value={inp.email}
+            value={personalInputs.email}
             onChange={handleChange}
           />
         </label>
@@ -56,7 +65,7 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
             type="text"
             name="phone"
             id=""
-            value={inp.phone}
+            value={personalInputs.phone}
             onChange={handleChange}
           />
         </label>
@@ -66,4 +75,4 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
   }
 }
 
-export { FormGeneralSection };
+export { FormPersonalSection };

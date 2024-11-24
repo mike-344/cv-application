@@ -1,16 +1,16 @@
 import { Button } from "./Button"
-import { FormGeneralSection } from "./FormGeneralSection"
+import { FormPersonalSection } from "./FormPersonalSection"
 import "./Form.css"
 
 
 
 
-function Form({inp, handleChange, handleClick}){
+function Form({personalInputs, handleChange, handleClick}){
 
     return (
         <>
        <form>
-        <FormGeneralSection inp={inp} handleChange={handleChange} handleClick={handleClick}/>
+        <FormPersonalSection personalInputs={personalInputs} handleChange={handleChange} handleClick={handleClick}/>
         </form>
         </>
     )

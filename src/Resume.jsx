@@ -1,14 +1,14 @@
 import './Resume.css'
-import './ResumeGeneralSection'
-import { ResumeGeneralSection } from './ResumeGeneralSection'
+import './ResumePersonalSection'
+import { ResumePersonalSection } from './ResumePersonalSection'
 
-
-function Resume({text}){
+//Receive text object from App and pass down to children components
+function Resume({personalText}){
 
     return(
       <>
       <section className='resume'>
-        <ResumeGeneralSection text={text}/>
+        <ResumePersonalSection personalText={personalText}/>
       </section>
       </>
     )
