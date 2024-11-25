@@ -8,4 +8,16 @@ function updatePersonalText (personalInputs, personalText, setPersonalText) {
     }) 
   }
 
-  export {updatePersonalText}
+
+
+function updateEducationText(educationInputs, educationText, setEducationText){
+    setEducationText({
+        ...educationText,
+        school: educationInputs.school,
+        degree: educationInputs.degree,
+        schoolDateFrom: educationInputs.schoolDateFrom,
+        schoolDateTo: educationInputs.schoolDateTo,
+    }) 
+}
+
+  export {updatePersonalText, updateEducationText}

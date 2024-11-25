@@ -24,7 +24,7 @@ const handleChange = (e) => setPersonalInputs({...personalInputs, [e.target.name
 
 return(
 <>
-<Form personalInputs = {personalInputs} text = {personalText} handleChange = {handleChange} handleClick={()=>updatePersonalText(personalInputs, personalText, setPersonalText)} />
+<Form personalInputs = {personalInputs} handleChange = {handleChange} handleClick={()=>updatePersonalText(personalInputs, personalText, setPersonalText)} />
 <Resume personalText = {personalText}/>
 </>
 )

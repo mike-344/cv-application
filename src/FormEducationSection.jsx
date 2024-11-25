@@ -1,40 +1,25 @@
-
+import { useState } from "react";
+import { Button } from "./Button";
 //working on it, basing off general form
-function FormEducationSection(){
+function FormEducationSection({ educationInputs, handleChange, handleClick }){
     const [closed, setClosed] = useState(true);
 
     const handleToggle = () => {
-        if (closed) {
-          setClosed(false);
-        } else {
-          setClosed(true);
-        }
-      };
-    
-
+      closed ? setClosed(false) : setClosed(true);
+     };
+       
 return (
     <fieldset>
          <legend onClick={handleToggle}>Education</legend>
-        <InputFields
-          inp={inp}
-          handleChange={handleChange}
-          isClosed={closed}
-          handleClick={handleClick}
-        />
-    </fieldset>
-)
-}
-
-function InputFields({ inp, handleChange, isClosed, handleClick }) {
-    if (!isClosed) {
-      return (
+         {!closed ? (
+     
         <>
           <label>School:
             <input
               type="text"
               name="school"
               id=""
-              value={inp.school}
+              value={educationInputs.school}
               onChange={handleChange}
             />
           </label>
@@ -44,7 +29,7 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
               type="text"
               name="degree"
               id=""
-              value={inp.degree}
+              value={educationInputs.degree}
               onChange={handleChange}
             />
           </label>
@@ -54,7 +39,7 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
               type="date"
               name="schoolDateFrom"
               id=""
-              value={inp.schoolDateFrom}
+              value={educationInputs.schoolDateFrom}
               onChange={handleChange}
             />
           </label>
@@ -63,14 +48,17 @@ function InputFields({ inp, handleChange, isClosed, handleClick }) {
               type="date"
               name="schoolDateTo"
               id=""
-              value={inp.schoolDateTo}
+              value={educationInputs.schoolDateTo}
               onChange={handleChange}
             />
           </label>
           <Button onClick={handleClick} />
         </>
-      );
-    }
-  }
+         ): null}
+    
+    </fieldset>
+)
+}
+
 
 export {FormEducationSection}

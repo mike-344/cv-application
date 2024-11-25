@@ -1,15 +1,20 @@
-function ResumeEducationSection({text}){
+function ResumeEducationSection({educationText}){
 
     return(
         <>
-       
-        <div className="school">{text.school}</div>
-        <div className="degree">{text.degree}</div>
-        <div className="schoolDateFrom">{text.schoolDateFrom}</div>
-        <div className="schoolDateTo">{text.schoolDateTo}</div>
-        
+        <section>
+        <div className="school">{educationText.school}</div>
+        <div className="degree">{educationText.degree}</div>
+        <div className="schoolDateFrom">{educationText.schoolDateFrom}</div>
+        <div className="schoolDateTo">{educationText.schoolDateTo}</div>
+        </section>
         </>
     )
+}
+
+function ResumeEducationList({educationText}){
+
+   
 }
 
 export {ResumeEducationSection}
