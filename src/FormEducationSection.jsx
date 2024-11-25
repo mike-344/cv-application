@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "./Button";
 //working on it, basing off general form
-function FormEducationSection({ educationInputs, handleChange, handleClick }){
+function FormEducationSection({ educationFormData, handleChange, handleClick }){
     const [closed, setClosed] = useState(true);
 
     const handleToggle = () => {
@@ -19,7 +19,7 @@ return (
               type="text"
               name="school"
               id=""
-              value={educationInputs.school}
+              value={educationFormData.school}
               onChange={handleChange}
             />
           </label>
@@ -29,7 +29,7 @@ return (
               type="text"
               name="degree"
               id=""
-              value={educationInputs.degree}
+              value={educationFormData.degree}
               onChange={handleChange}
             />
           </label>
@@ -39,7 +39,7 @@ return (
               type="date"
               name="schoolDateFrom"
               id=""
-              value={educationInputs.schoolDateFrom}
+              value={educationFormData.schoolDateFrom}
               onChange={handleChange}
             />
           </label>
@@ -48,7 +48,7 @@ return (
               type="date"
               name="schoolDateTo"
               id=""
-              value={educationInputs.schoolDateTo}
+              value={educationFormData.schoolDateTo}
               onChange={handleChange}
             />
           </label>

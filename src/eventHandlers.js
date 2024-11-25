@@ -1,10 +1,10 @@
 //Updates personalText state variable defined in App.jsx
-function updatePersonalText (personalInputs, personalText, setPersonalText) {
+function updatePersonalText (personalFormData, personalText, setPersonalText) {
     setPersonalText({
         ...personalText,
-        name: personalInputs.name,
-        email: personalInputs.email,
-        phone: personalInputs.phone,
+        name: personalFormData.name,
+        email: personalFormData.email,
+        phone: personalFormData.phone,
     }) 
   }
 

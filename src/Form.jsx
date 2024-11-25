@@ -5,12 +5,12 @@ import "./Form.css"
 
 
 
-function Form({personalInputs, handleChange, handleClick}){
+function Form({personalFormData, handleChange, handleClick}){
 
     return (
         <>
        <form>
-        <FormPersonalSection personalInputs={personalInputs} handleChange={handleChange} handleClick={handleClick}/>
+        <FormPersonalSection personalFormData={personalFormData} handleChange={handleChange} handleClick={handleClick}/>
         </form>
         </>
     )

@@ -6,7 +6,7 @@ import { updatePersonalText } from "./eventHandlers";
 
 function App() {
  //Initialize state for input values in Personal information form section 
-  const [personalInputs, setPersonalInputs] = useState({
+  const [personalFormData, setPersonalFormData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -20,11 +20,11 @@ const [personalText, setPersonalText] = useState({
 });
 
 //Update inp object state values when input field is modified
-const handleChange = (e) => setPersonalInputs({...personalInputs, [e.target.name]: e.target.value})
+const handleChange = (e) => setPersonalFormData({...personalFormData, [e.target.name]: e.target.value})
 
 return(
 <>
-<Form personalInputs = {personalInputs} handleChange = {handleChange} handleClick={()=>updatePersonalText(personalInputs, personalText, setPersonalText)} />
+<Form personalFormData = {personalFormData} handleChange = {handleChange} handleClick={()=>updatePersonalText(personalFormData, personalText, setPersonalText)} />
 <Resume personalText = {personalText}/>
 </>
 )

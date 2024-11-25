@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "./Button";
 
-function FormPersonalSection({ personalInputs, handleChange, handleClick }) {
+function FormPersonalSection({ personalFormData, handleChange, handleClick }) {
     
   const [closed, setClosed] = useState(true);
 
@@ -22,7 +22,7 @@ function FormPersonalSection({ personalInputs, handleChange, handleClick }) {
              type="text"
              name="name"
              id=""
-             value={personalInputs.name}
+             value={personalFormData.name}
              onChange={handleChange}
            />
          </label>
@@ -32,7 +32,7 @@ function FormPersonalSection({ personalInputs, handleChange, handleClick }) {
              type="text"
              name="email"
              id=""
-             value={personalInputs.email}
+             value={personalFormData.email}
              onChange={handleChange}
            />
          </label>
@@ -42,7 +42,7 @@ function FormPersonalSection({ personalInputs, handleChange, handleClick }) {
              type="text"
              name="phone"
              id=""
-             value={personalInputs.phone}
+             value={personalFormData.phone}
              onChange={handleChange}
            />
          </label>

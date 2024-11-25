@@ -4,7 +4,7 @@ import { useState } from "react";
 import { updateEducationText } from "./eventHandlers";
 
 function PracApp(){
-    const [educationInputs, setEducationInputs] = useState({
+    const [educationFormData, setEducationFormData] = useState({
         school: "",
         degree: "",
         schoolDateFrom: "",
@@ -20,12 +20,12 @@ function PracApp(){
     });
     
     
-    const handleChange = (e) => setEducationInputs({...educationInputs, [e.target.name]: e.target.value})
+    const handleChange = (e) => setEducationFormData({...educationFormData, [e.target.name]: e.target.value})
     
 
     return(
         <>
-        <FormEducationSection educationInputs= {educationInputs} handleChange = {handleChange} handleClick={()=>updateEducationText(educationInputs, educationText, setEducationText)} />
+        <FormEducationSection educationFormData= {educationFormData} handleChange = {handleChange} handleClick={()=>updateEducationText(educationFormData, educationText, setEducationText)} />
         <ResumeEducationSection educationText={educationText}/>
         </>
     )

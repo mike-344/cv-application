@@ -7,6 +7,6 @@ import { PracApp } from './PracApp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <PracApp />
   </StrictMode>,
 )
