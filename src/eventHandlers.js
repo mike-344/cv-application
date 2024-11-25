@@ -1,4 +1,4 @@
-//Updates personalText state variable defined in App.jsx
+
 function updatePersonalText (personalFormData, personalText, setPersonalText) {
     setPersonalText({
         ...personalText,
