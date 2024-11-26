@@ -4,6 +4,7 @@ import { Form } from "./Form";
 import { Resume } from "./Resume";
 import { updatePersonalText } from "./eventHandlers";
 import { FormEducation } from "./FormEducation";
+import { displayEducation} from  "./educationHelpers"
 
 function App() {
 
@@ -20,44 +21,13 @@ const updateInput = (e) => setEducationFormInput({...educationFormInput, [e.targ
 //Initialize array to store education objects
 const [educationListData, setEducationListData] = useState([])
 
-//Clears input fields on form submission or close
-function clearEducationInputFields(){
-  setEducationFormInput( { ...educationFormInput,
-    school: "",
-    degree: "", 
-    schoolDateFrom: "", 
-    schoolDateTo: "",
-  })
+const handleEducationSubmit = () =>{
+  displayEducation(educationListData, setEducationListData, educationFormInput, setEducationFormInput)
 }
-
-//Add new education object to the array, taking values from the form input on submission
-function addEducationToList(){
-  setEducationListData([...educationListData, {
-    school: educationFormInput.school,
-    degree: educationFormInput.degree,
-    schoolDateFrom: educationFormInput.schoolDateFrom,
-    schoolDateTo: educationFormInput.schoolDateTo,
-    id: crypto.randomUUID(),
-  },
-])
-}
-
-/*Store input data when user submits field, clear input fields, and re-render
-Consider closing the input field here too*/
-function displayEducation(){
-  addEducationToList();
-  clearEducationInputFields();
-}
-
-
-function removeEducationFromList(){
-  
-}
-
 
 return(
   <>
-  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput} handleClick = {displayEducation}/>
+  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput} handleClick = {handleEducationSubmit}/>
   <Resume educationListData={educationListData} />
   </>
 )
