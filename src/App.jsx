@@ -18,6 +18,7 @@ const educationListData = [
 ]
 */
 
+//Initialize array to store education objects
 const [educationListData, setEducationListData] = useState([])
 
 function clearEducationInputFields(){
@@ -29,18 +30,24 @@ function clearEducationInputFields(){
   })
 }
 
-function addEducation(){
+function addEducationToList(){
   setEducationListData([...educationListData, {
     school: educationFormInput.school,
     degree: educationFormInput.degree,
     schoolDateFrom: educationFormInput.schoolDateFrom,
     schoolDateTo: educationFormInput.schoolDateTo,
+    id: crypto.randomUUID,
   },
 ])
 }
 
+function removeEducationFromList(){
+  
+}
+
+/*When user submits education form, store input data, clear input fields, and re-render*/
 function displayEducation(){
-  addEducation();
+  addEducationToList();
   clearEducationInputFields();
 }
 

@@ -2,11 +2,10 @@ import './Resume.css'
 
 function Resume({educationListData}){
 
-    
+
     const educationList  = educationListData.map((education) =>{
-        let uuid = crypto.randomUUID();
         return(
-        <div className='educationInfoResume' key={uuid}>
+        <div className='educationInfoResume' key={education.id}>
         <div>{education.school}</div>
         <div>{education.degree}</div>
         <div>{education.schoolDateFrom}</div>
