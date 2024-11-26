@@ -18,8 +18,16 @@ const educationListData = [
 ]
 */
 
-
 const [educationListData, setEducationListData] = useState([])
+
+function clearEducationInputFields(){
+  setEducationFormInput( { ...educationFormInput,
+    school: "",
+    degree: "", 
+    schoolDateFrom: "", 
+    schoolDateTo: "",
+  })
+}
 
 function addEducation(){
   setEducationListData([...educationListData, {
@@ -29,6 +37,11 @@ function addEducation(){
     schoolDateTo: educationFormInput.schoolDateTo,
   },
 ])
+}
+
+function displayEducation(){
+  addEducation();
+  clearEducationInputFields();
 }
 
 //Initialize state of education form field input
@@ -44,7 +57,7 @@ const updateInput = (e) => setEducationFormInput({...educationFormInput, [e.targ
 
 return(
   <>
-  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput} handleClick = {addEducation}/>
+  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput} handleClick = {displayEducation}/>
   <Resume educationListData={educationListData} />
   </>
 )
