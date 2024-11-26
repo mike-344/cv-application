@@ -7,20 +7,20 @@ import { FormEducation } from "./FormEducation";
 
 function App() {
 
-/*
-const educationListData = [
-  {
-    school: "school",
-    degree: "degree", 
-    schoolDateFrom: "from", 
-    schoolDateTo: "to",
-  }
-]
-*/
+//Initialize object to store education form field input
+const [educationFormInput, setEducationFormInput] = useState({
+  school: "",
+  degree: "", 
+  schoolDateFrom: "", 
+  schoolDateTo: "",
+})
+//Update state of form field input on change
+const updateInput = (e) => setEducationFormInput({...educationFormInput, [e.target.name]: e.target.value})
 
 //Initialize array to store education objects
 const [educationListData, setEducationListData] = useState([])
 
+//Clears input fields on form submission or close
 function clearEducationInputFields(){
   setEducationFormInput( { ...educationFormInput,
     school: "",
@@ -30,37 +30,30 @@ function clearEducationInputFields(){
   })
 }
 
+//Add new education object to the array, taking values from the form input on submission
 function addEducationToList(){
   setEducationListData([...educationListData, {
     school: educationFormInput.school,
     degree: educationFormInput.degree,
     schoolDateFrom: educationFormInput.schoolDateFrom,
     schoolDateTo: educationFormInput.schoolDateTo,
-    id: crypto.randomUUID,
+    id: crypto.randomUUID(),
   },
 ])
 }
 
-function removeEducationFromList(){
-  
-}
-
-/*When user submits education form, store input data, clear input fields, and re-render*/
+/*Store input data when user submits field, clear input fields, and re-render
+Consider closing the input field here too*/
 function displayEducation(){
   addEducationToList();
   clearEducationInputFields();
 }
 
-//Initialize state of education form field input
-const [educationFormInput, setEducationFormInput] = useState({
-  school: "",
-  degree: "", 
-  schoolDateFrom: "", 
-  schoolDateTo: "",
-})
 
-//Update state of form field input on change
-const updateInput = (e) => setEducationFormInput({...educationFormInput, [e.target.name]: e.target.value})
+function removeEducationFromList(){
+  
+}
+
 
 return(
   <>

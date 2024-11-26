@@ -2,7 +2,7 @@ import './Resume.css'
 
 function Resume({educationListData}){
 
-
+    let uuid = crypto.randomUUID();
     const educationList  = educationListData.map((education) =>{
         return(
         <div className='educationInfoResume' key={education.id}>
