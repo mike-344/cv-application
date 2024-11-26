@@ -1,13 +1,16 @@
 
-//Clears input fields on form submission or close
-function clearEducationInputFields(educationFormInput, setEducationFormInput){
-    setEducationFormInput( { ...educationFormInput,
-      school: "",
-      degree: "", 
-      schoolDateFrom: "", 
-      schoolDateTo: "",
-    })
+//To clear input fields on form submission or close
+  function clearInputFields(formInput, setFormInput){
+    let copiedInput = {...formInput}
+    for(const prop in copiedInput){
+        copiedInput[prop] = ""
+    }
+    
+      setFormInput( copiedInput)
+  
   }
+  
+   
   
   //Add new education object to the array, taking values from the form input on submission
   function addEducationToList(educationListData, setEducationListData, educationFormInput){
@@ -20,12 +23,14 @@ function clearEducationInputFields(educationFormInput, setEducationFormInput){
     },
   ])
   }
+
+ 
   
   /*Store input data when user submits field, clear input fields, and re-render
   Consider closing the input field here too*/
   function displayEducation(educationListData, setEducationListData, educationFormInput, setEducationFormInput){
     addEducationToList(educationListData, setEducationListData, educationFormInput);
-    clearEducationInputFields(educationFormInput, setEducationFormInput);
+    clearInputFields(educationFormInput, setEducationFormInput);
   }
   
   
@@ -34,4 +39,4 @@ function clearEducationInputFields(educationFormInput, setEducationFormInput){
   }
 
   
-  export{clearEducationInputFields, addEducationToList, displayEducation}
+  export{clearInputFields, addEducationToList, displayEducation}
