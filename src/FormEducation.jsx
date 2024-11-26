@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Button } from "./Button"
 
-function FormEducation({educationFormInput, handleChange}){
+function FormEducation({educationFormInput, handleChange, handleClick}){
     const [showForm, setShowForm] = useState(false);
 
     const toggleForm = () =>{
@@ -45,7 +45,7 @@ function FormEducation({educationFormInput, handleChange}){
                 onChange={handleChange} />
             </label>
             
-            <Button />
+            <Button onClick={handleClick}/>
             </> : null
 }
             </fieldset>

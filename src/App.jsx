@@ -7,7 +7,8 @@ import { FormEducation } from "./FormEducation";
 
 function App() {
 
-const educationDataList = [
+/*
+const educationListData = [
   {
     school: "school",
     degree: "degree", 
@@ -15,6 +16,20 @@ const educationDataList = [
     schoolDateTo: "to",
   }
 ]
+*/
+
+
+const [educationListData, setEducationListData] = useState([])
+
+function addEducation(){
+  setEducationListData([...educationListData, {
+    school: educationFormInput.school,
+    degree: educationFormInput.degree,
+    schoolDateFrom: educationFormInput.schoolDateFrom,
+    schoolDateTo: educationFormInput.schoolDateTo,
+  },
+])
+}
 
 //Initialize state of education form field input
 const [educationFormInput, setEducationFormInput] = useState({
@@ -29,8 +44,8 @@ const updateInput = (e) => setEducationFormInput({...educationFormInput, [e.targ
 
 return(
   <>
-  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput}/>
-  <Resume educationDataList={educationDataList}/>
+  <FormEducation educationFormInput = {educationFormInput} handleChange = {updateInput} handleClick = {addEducation}/>
+  <Resume educationListData={educationListData} />
   </>
 )
 }
