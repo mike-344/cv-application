@@ -1,0 +1,8 @@
+form{
+    border: 1px solid black;
+}
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+}

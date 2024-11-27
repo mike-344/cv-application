@@ -1,6 +1,6 @@
-import './Resume.css'
+import './ResumeDisplay.css'
 
-function Resume({educationListData}){
+function ResumeDisplay({educationListData}){
 
     let uuid = crypto.randomUUID();
     const educationList  = educationListData.map((education) =>{
@@ -23,4 +23,4 @@ function Resume({educationListData}){
     
 }
 
-export{Resume}
+export{ResumeDisplay}

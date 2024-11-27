@@ -10,8 +10,6 @@
   
   }
   
-   
-  
   //Add new education object to the array, taking values from the form input on submission
   function addEducationToList(educationListData, setEducationListData, educationFormInput){
     setEducationListData([...educationListData, {
@@ -24,8 +22,6 @@
   ])
   }
 
- 
-  
   /*Store input data when user submits field, clear input fields, and re-render
   Consider closing the input field here too*/
   function displayEducation(educationListData, setEducationListData, educationFormInput, setEducationFormInput){

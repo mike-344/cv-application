@@ -7,8 +7,3 @@
 #root{
     display: flex;
 }
-form fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
-}
