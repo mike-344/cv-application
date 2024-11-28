@@ -4,6 +4,7 @@ import { ResumeDisplay } from "./components/ResumeDisplay";
 import { EducationForm } from "./components/EducationForm";
 import { displayEducation} from  "./educationHelpers"
 import { clearInputFields } from "./educationHelpers";
+import { EducationFormManager } from "./components/EducationFormManager";
 
 function App() {
 
@@ -30,7 +31,7 @@ const clearEducationForm =  () =>{
 
 return(
   <>
-  <EducationForm educationFormInput = {educationFormInput} handleChange = {updateEducationInput} handleClick = {handleEducationSubmit} clearEducationForm = {clearEducationForm}/>
+  <EducationFormManager educationFormInput = {educationFormInput} handleChange = {updateEducationInput}/>
   <ResumeDisplay educationListData={educationListData} />
   </>
 )

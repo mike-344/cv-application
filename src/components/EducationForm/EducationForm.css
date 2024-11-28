@@ -1,8 +1,19 @@
 form{
     border: 1px solid black;
+    padding: 8px;
 }
 form fieldset{
     display: flex;
     flex-direction: column;
     border: none;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    display: block;
+    width: 100%;
+}
+legend{
+    border: none;
+    text-align: center;
 }

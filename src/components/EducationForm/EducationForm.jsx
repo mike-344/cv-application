@@ -4,8 +4,6 @@ import './EducationForm.css'
 
 function EducationForm({educationFormInput, handleChange}){
    
-    
-
     return(
         <>
         <form action="">
